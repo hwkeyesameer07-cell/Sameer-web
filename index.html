@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+    }
+
+    header h1 { font-size: 2.8rem; color: #fff; }
+    header p { font-size: 1.2rem; color: #f1f5f9; margin-top: 10px; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 16px;
+      background: #1e293b;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a { color: #c4b5fd; text-decoration: none; font-weight: 600; }
+    nav a:hover { color: #fff; }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h2 { color: #a78bfa; margin-bottom: 16px; }
+
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 12px 0;
+      border: 1px solid #334155;
+    }
+
+    button {
+      background: #8b5cf6;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+
+    button:hover { background: #7c3aed; }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- ✏️ CHANGE THIS: your name and tagline -->
+    <h1>Hi, I'm Alex 👋</h1>
+    <p>Welcome to my first website, made on an iPad!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <!-- ✏️ CHANGE THIS: write about yourself -->
+    <p>This is where you introduce yourself. What do you do? What are you learning?
+       What do you love? Replace this text with your own story.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="card">
+      <h3>Project One</h3>
+      <p>A short description of something cool you made or want to make.</p>
+    </div>
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>Duplicate this card block to add more projects.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Click the button below to say hello.</p>
+    <button onclick="sayHello()">Say Hello 👋</button>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ on an iPad · 2026</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      alert("Hello! Thanks for visiting my website 🎉");
+    }
+  </script>
+
+</body>
+</html>
